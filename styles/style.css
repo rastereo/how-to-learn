@@ -15,7 +15,7 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  padding-left: 64px;
   position: relative;
   background-color: #f2f2f2;
   display: flex;
@@ -40,7 +40,7 @@
   line-height: 96px;
   font-weight: 600;
   width: 730px;
-  margin-left: 64px;
+  margin: 0;
   z-index: 2;
 }
 
@@ -261,4 +261,69 @@
   position: absolute;
   right: -210px;
   z-index: 0;
+}
+
+/** FOOTER **/
+
+.footer {
+  min-height: 350px;
+  background-color: #1f1f1f;
+  display: flex;
+  padding: 60px 0 40px;
+}
+
+.footer__columns {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  justify-content: space-between;
+}
+
+.footer__author {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  color: white;
+  padding: 18px 0;
+  margin: 0;
+}
+
+.footer__column-heading {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.footer__column-links {
+  list-style: none;
+  padding: 0 0 16px;
+  margin: 0;
+}
+
+.footer__column-link {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
